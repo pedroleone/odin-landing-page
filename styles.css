@@ -1,0 +1,20 @@
+:root {
+    box-sizing: border-box;
+
+    --dark-bg-color: #1f2937;
+    --quote-bg-color: #e5e7eb;
+    --quote-text-color: #1f2937;
+    --button-color: #3882f6;
+    --cta-bg-color: #3882f6;
+    --hero-mtext-color: #f9faf8;
+    --hero-stext-color: #e5e7eb;
+
+}
+
+.header  {
+    background-color: var(--dark-bg-color);
+}
+
+.hero {
+    background-color: var(--dark-bg-color);
+}
