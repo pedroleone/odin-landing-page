@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap');
+
+
 :root {
     box-sizing: border-box;
 
@@ -8,13 +11,203 @@
     --cta-bg-color: #3882f6;
     --hero-mtext-color: #f9faf8;
     --hero-stext-color: #e5e7eb;
+    
 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .header  {
     background-color: var(--dark-bg-color);
+    padding: 16px;
 }
 
 .hero {
     background-color: var(--dark-bg-color);
+}
+
+.header .container {
+    display: flex;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--hero-mtext-color);
+    margin-right: auto;
+
+}
+
+.header ul {
+    display: flex;
+    gap: 32px;
+}
+
+.header ul a {
+    text-decoration: none;
+    color: var(--hero-mtext-color);
+    font-size: 18px;
+}
+
+
+
+.hero .container {
+    display: flex;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.hero .hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--hero-mtext-color);
+}
+
+.hero .hero-text-column {
+    max-width: 500px;
+    
+}
+
+.hero .hero-text {
+    font-size: 18px;
+    color: var(--hero-stext-color);
+}
+
+.hero button {
+    border: 0;
+    background-color: var(--button-color);
+    padding: 8px 32px;
+    border-radius: 8px;
+    color: var(--hero-stext-color);
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 4em;                             
+}
+
+
+.info-title {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 900;
+    
+}
+
+.info-cards {
+    display: flex;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;    
+    margin-bottom: 100px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.info-cards .card {
+    width: 170px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card img {
+    border-radius: 8px;
+    border: 2px solid var(--button-color);
+    
+}
+
+.quote-contaier {
+    background-color: var(--quote-bg-color);
+}
+
+.quote {
+    display: flex;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;    
+    flex-direction: column;
+    padding: 100px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0 100px;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+.call-action-container {
+    display: flex;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;    
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.call-action {
+    background-color: var(--cta-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    color: var(--hero-mtext-color);
+    padding: 50px 80px;
+    margin-bottom: 60px;
+}
+
+.call-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.call-txt {
+    margin-right: 100px;
+}
+
+
+.call-action button {
+    background-color: var(--cta-bg-color);
+    border-radius: 8px;
+    border: 2px solid var(--hero-mtext-color);
+    color: var(--hero-mtext-color);
+    font-weight: bold;
+    padding: 6px 24px;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: var(--dark-bg-color);
+    color: var(--hero-mtext-color);
+    padding: 36px 0;
 }
